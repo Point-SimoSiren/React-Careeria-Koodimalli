@@ -52,7 +52,7 @@ const handleSubmit = (event) => {
 
       })
       .catch(error => {
-        setMessage(error)
+        setMessage(error.message) // Korjattu 1.4.2025! Error on objekti (Axios error)
         setIsPositive(false)
         setShowMessage(true)
 
